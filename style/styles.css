@@ -2,11 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Header Style */
 header {
+  max-width: 1720px;
+  width: 100%;
   padding: 50px 120px;
 }
 
@@ -44,11 +46,6 @@ nav li img {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: normal;
-}
-
-.banner-container{
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 
 /* banner image styles */
@@ -99,4 +96,66 @@ nav li img {
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
+}
+
+/* Responsive for mobile devices */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  nav li img {
+    display: none;
+  }
+
+  .influencer-title {
+    font-size: 1rem;
+    padding-left: 43px;
+  }
+
+  .nav li {
+    font-size: 0.8rem;
+  }
+
+  .banner-container > img {
+    width: 100%;
+  }
+
+  .img-background {
+    width: 420px;
+    height: 400px;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .banner-title {
+    font-size: 1.75rem;
+    margin-top: 20px;
+
+  }
+
+  .banner-description {
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .banner-btn{
+    margin-bottom: 10px;
+  }
 }
