@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* wrapper */
@@ -183,6 +183,25 @@ section {
   border-radius: 10px;
 }
 
+
+.card-footer > h2 {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.card-footer > .description {
+  color: #787885;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.price-tag{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+}           
+
 /* Responsive for mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -247,7 +266,4 @@ section {
     padding-left: 180px;
   }
 
-  .sponsors {
-    padding-left: 150px;
-  }
 }
