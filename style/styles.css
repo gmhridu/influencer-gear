@@ -32,6 +32,10 @@ nav li a {
   color: #3a3a3a;
 }
 
+nav li img{
+  width: 100%;
+}
+
 .influencer-title {
   width: 243px;
   height: 52.2px;
