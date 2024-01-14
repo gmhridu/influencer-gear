@@ -1,15 +1,24 @@
 /* Poppins fonts from google fonts */
-* {
+*,
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
 }
 
 /* Header Style */
 header {
   max-width: 1720px;
   width: 100%;
-  padding: 50px 120px;
 }
 
 /* Nav Style */
@@ -98,6 +107,12 @@ nav li img {
   font-weight: 700;
 }
 
+main {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
 /* divider styles added */
 .divider {
   width: 80%;
@@ -124,8 +139,8 @@ nav li img {
 
 /* card styles */
 
-section{
-  max-width: 1440px;
+section {
+  max-width: 1720px;
   margin: 80px auto;
 }
 
@@ -138,20 +153,32 @@ section{
   font-size: 1.75rem;
 }
 
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 320px);
-    margin: auto;
-    width: auto ;
-    gap: 30px;
-    justify-content: center;
+.card-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));
 }
 
-.card{
-    width: 300px;
-    height: 480px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px;
+.card {
+  min-width: 300px;
+  height: 480px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  padding: 15px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Responsive for mobile devices */
