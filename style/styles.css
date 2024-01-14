@@ -46,3 +46,10 @@ nav li img{
   font-weight: 700;
   line-height: normal;
 }
+
+.banner-container{
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+/* banner image styles */
