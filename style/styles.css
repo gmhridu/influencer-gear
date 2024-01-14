@@ -32,7 +32,7 @@ nav li a {
   color: #3a3a3a;
 }
 
-nav li img{
+nav li img {
   width: 100%;
 }
 
@@ -41,15 +41,56 @@ nav li img{
   height: 52.2px;
   color: #3a3a3a;
   font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: normal;
-}
-
-.banner-container{
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 
 /* banner image styles */
+.banner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-container > img {
+  width: 100%;
+}
+
+.img-background {
+  position: fixed;
+  right: auto;
+  width: 440px;
+  height: 414px;
+  z-index: -1;
+}
+
+.banner-title {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-description {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.banner-btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+}
+
+.btn-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
