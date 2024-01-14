@@ -2,5 +2,43 @@
 * {
   margin: 0;
   padding: 0;
-  font-family : "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Style */
+header {
+  padding: 50px 120px;
+}
+
+/* Nav Style */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 34px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.influencer-title {
+  width: 243px;
+  height: 52.2px;
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
